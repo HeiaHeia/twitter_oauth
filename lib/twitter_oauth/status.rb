@@ -8,7 +8,7 @@ module TwitterOAuth
 
     # Updates the authenticating user's status.
     def update(message, options={})
-      post('/1.1/statuses/update.json', options.merge(:status => message))
+      post('/statuses/update.json', options.merge(:status => message))
     end
 
     # Destroys the status specified by the required ID parameter
